@@ -54,7 +54,7 @@ __注意__：筆者は、滞在中の空き時間（細切れに、数時間～�
 #### 主要ポイント
 
 まとまった森林がある自然公園である。モントリオール島には類似した環境は他にないと思われる。
-
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3590.72261078413!2d-73.51396965650626!3d45.67863027946139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc8e1ff9814e6b3%3A0xb13164b849b75a2b!2sSecteur%20Bois-de-l&#39;h%C3%A9ritage!5e1!3m2!1sja!2sjp!4v1719737302949!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 この森をねぐらとするワシミミズクや、エボシクマゲラ等のキツツキ類を期待したい。週末であれば、熱心な地元バーダーにも会うことができる。筆者はワシミミズク等の鳥情報を教えてもらうことができた。ただし、モントリオールでは日常会話はフランス語であるため、英語が通じにくい場合もある。
 
