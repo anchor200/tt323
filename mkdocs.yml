@@ -1,0 +1,18 @@
+site_name: t323
+theme:
+  name: material
+  palette:
+    primary: green
+nav:
+  - Home: 'index.md'
+  - Blog:
+    - 2025 March: "b202503.md"
+  - 海外で探鳥:
+    - 緒言: "birding_foreword.md"
+    - 冬のモントリオール: "birding_montreal_2022.md"
+    - 冬のロンドン（レインハム）: "birding_rainham_2022.md"
+    - 真夏のトルン（ポーランド）: "birding_torun_2023.md"
+    - 晩冬のアイスランド: "birding_iceland_2025.md"
+
+
+
