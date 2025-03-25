@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画像グリッド</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .grid-item {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .caption {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h2>2025 March 写真館</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="image1.jpg" alt="画像1">
+            <div class="caption">キャプション1</div>
+        </div>
+        <div class="grid-item">
+            <img src="image2.jpg" alt="画像2">
+            <div class="caption">キャプション2</div>
+        </div>
+        <div class="grid-item">
+            <img src="image3.jpg" alt="画像3">
+            <div class="caption">キャプション3</div>
+        </div>
+        <div class="grid-item">
+            <img src="image4.jpg" alt="画像4">
+            <div class="caption">キャプション4</div>
+        </div>
+        <div class="grid-item">
+            <img src="image5.jpg" alt="画像5">
+            <div class="caption">キャプション5</div>
+        </div>
+        <div class="grid-item">
+            <img src="image6.jpg" alt="画像6">
+            <div class="caption">キャプション6</div>
+        </div>
+    </div>
+</body>
+</html>
