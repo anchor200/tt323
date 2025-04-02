@@ -5,3 +5,16 @@
 自己紹介：<a href="https://sites.google.com/view/jibahdenba/profile">こちら</a>
 
 
+### 海外で探鳥
+[緒言](birding_foreword.md)
+
+
+
+### Blog
+[2024 04](b202504.md)  
+[2024 03](b202503.md)  
+
+
+
+
+
