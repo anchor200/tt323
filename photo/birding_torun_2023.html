@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos from April, 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .grid-item {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .caption {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        /* モーダルのスタイル */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-content {
+            max-width: 80%;
+            max-height: 80%;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>真夏のトルン 写真館</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="birding_torun_2023/IMG_8146.jpg" alt="画像1" onclick="openModal(this)">
+            <div class="caption">シロビタイジョウビタキ</div>
+        </div>
+        <div class="grid-item">
+            <img src="birding_torun_2023/IMG_8235.JPG" alt="画像1" onclick="openModal(this)">
+            <div class="caption">キタヤナギムシクイ</div>
+        </div>
+        <div class="grid-item">
+            <img src="birding_torun_2023/867797EE-8260-4640-967C-5AAA80795FD8.JPG" alt="画像1" onclick="openModal(this)">
+            <div class="caption">シュバシコウ</div>
+        </div>
+        <div class="grid-item">
+            <img src="birding_torun_2023/IMG_8282.JPG" alt="画像1" onclick="openModal(this)">
+            <div class="caption">セアカモズ</div>
+        </div>
+    </div>
+
+    <!-- モーダルウィンドウ -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img id="modal-image" class="modal-content">
+    </div>
+
+    <script>
+    document.getElementById('modal').style.display = 'none';
+        function openModal(img) {
+            document.getElementById('modal-image').src = img.src;
+            document.getElementById('modal').style.display = 'flex';
+        }
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
