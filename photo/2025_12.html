@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photos from August, 2025</title>
+    <title>Photos from November, 2025</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -30,14 +30,13 @@
             height: auto;
             border-radius: 5px;
             cursor: pointer;
-            display: block;
         }
         .caption {
             margin-top: 8px;
             font-size: 14px;
             color: #555;
         }
-
+        
         /* モーダルのスタイル */
         .modal {
             display: none;
@@ -48,6 +47,7 @@
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
             align-items: center;
             justify-content: center;
         }
@@ -66,61 +66,46 @@
     </style>
 </head>
 <body>
-    <h2>2025 August 写真館</h2>
-
-    <!-- ✅ すべての写真を「1つの」grid-containerにまとめる -->
+    <h2>2025 December 写真館</h2>
     <div class="grid-container">
         <div class="grid-item">
-            <img src="2025_08/5.jpg" alt="画像0" onclick="openModal(this)">
-            <div class="caption">万全の体制でミッフィー展へ</div>
+            <img src="2025_12/IMG_7740.jpg" alt="カヤクグリ" onclick="openModal(this)">
+            <div class="caption">初見のカヤクグリ（逆光）。六甲山はシカがまだ少なく下層植生が豊かなのが、個体数が多い理由か。</div>
         </div>
-
         <div class="grid-item">
-            <img src="2025_08/1.png" alt="画像1" onclick="openModal(this)">
-            <div class="caption">ミッフィー70周年</div>
+            <img src="2025_12/IMG_7739.png" alt="コガラの飛翔" onclick="openModal(this)">
+            <div class="caption">コガラの飛翔</div>
         </div>
-
         <div class="grid-item">
-            <img src="2025_08/4.jpg" alt="画像2" onclick="openModal(this)">
-            <div class="caption">毎年花火を見て感動する</div>
+            <img src="2025_12/IMG_7970.jpg" alt="島根の割り子そば" onclick="openModal(this)">
+            <div class="caption">島根の割り子そば。天皇家にも供するものらしい。殻ごと挽くので色が濃い。たれは甘い</div>
         </div>
-
         <div class="grid-item">
-            <img src="2025_08/2.png" alt="画像3" onclick="openModal(this)">
-            <div class="caption">人生初鎖場 急だった！</div>
+            <img src="2025_12/DSC07445.jpg" alt="ダルマエナガの群れ" onclick="openModal(this)">
+            <div class="caption">ダルマエナガの群れ@韓国</div>
         </div>
-
         <div class="grid-item">
-            <img src="2025_08/3.jpg" alt="画像4" onclick="openModal(this)">
-            <div class="caption">カラマツソウ @武尊</div>
+            <img src="2025_12/DSC07404.jpg" alt="クロハゲワシの大群" onclick="openModal(this)">
+            <div class="caption">クロハゲワシの大群。幼鳥だけがここに集まるらしい。かなりの数がいるらしく、重要な局所個体群</div>
         </div>
-
         <div class="grid-item">
-            <img src="2025_08/6.jpg" alt="画像5" onclick="openModal(this)">
-            <div class="caption">キベリタテハ　双眼鏡で撮影</div>
+            <img src="2025_12/DSC07374.jpg" alt="ワシミミズク" onclick="openModal(this)">
+            <div class="caption">ワシミミズク@坡州市、20年以上（代代わりしつつ？）繁殖を続ける</div>
         </div>
-
         <div class="grid-item">
-            <img src="2025_08/7.jpg" alt="画像6" onclick="openModal(this)">
-            <div class="caption">ツルリンドウ</div>
-        </div>
-
-        <div class="grid-item">
-            <img src="2025_08/8.jpg" alt="画像7" onclick="openModal(this)">
-            <div class="caption">ハリブキ</div>
+            <img src="2025_12/IMG_8158.jpg" alt="北朝鮮が見えるスタバ" onclick="openModal(this)">
+            <div class="caption">北朝鮮が見えるスタバ。作業している農家、軍人も観察できた</div>
         </div>
     </div>
 
     <!-- モーダルウィンドウ -->
     <div id="modal" class="modal" onclick="closeModal()">
         <span class="close">&times;</span>
-        <img id="modal-image" class="modal-content" alt="">
+        <img id="modal-image" class="modal-content">
     </div>
 
     <script>
-        // 初期状態では閉じておく
-        document.getElementById('modal').style.display = 'none';
-
+    document.getElementById('modal').style.display = 'none';
         function openModal(img) {
             document.getElementById('modal-image').src = img.src;
             document.getElementById('modal').style.display = 'flex';
