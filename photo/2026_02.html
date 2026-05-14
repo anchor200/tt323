@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos from March, 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .grid-item {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .caption {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        /* モーダルのスタイル */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-content {
+            max-width: 80%;
+            max-height: 80%;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>2026 January 写真館</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="2026_01/IMG_8300.jpeg" alt="画像1" onclick="openModal(this)">
+            <div class="caption">オーフス大学の学会会場　雪の中で会場がばらばらの建物で移動が最悪</div>
+        </div>
+        <div class="grid-item">
+            <img src="2026_01/IMG_1569.jpeg" alt="画像2" onclick="openModal(this)">
+            <div class="caption">オーフスのrewildingサイト、反対運動をしている人が馬に餌をやりに来ていた</div>
+        </div>
+        <div class="grid-item">
+            <img src="2026_01/IMG_8471.jpeg" alt="画像3" onclick="openModal(this)">
+            <div class="caption">オーフスの現代美術館　ぐるっと回れる</div>
+        </div>
+        <div class="grid-item">
+            <img src="2026_01/IMG_8553.jpeg" alt="画像4" onclick="openModal(this)">
+            <div class="caption">やっと見れたヒゲガラ　ゲントフテというところの池の周り</div>
+        </div>
+        <div class="grid-item">
+            <img src="2026_01/IMG_8683.jpeg" alt="画像5" onclick="openModal(this)">
+            <div class="caption">フィンランドでそば打ち名人目指していた時の写真</div>
+        </div>
+        <div class="grid-item">
+            <img src="2026_01/IMG_8721.jpeg" alt="画像6" onclick="openModal(this)">
+            <div class="caption">ポルヴォーというところで探鳥　ありえないくらい寒かった</div>
+        </div>
+        <div class="grid-item">
+            <img src="2026_01/IMG_8746.jpeg" alt="画像7" onclick="openModal(this)">
+            <div class="caption">ヘルシンキのカネルマキで見たイスカ　ebirdではハシブトイスカって書いてあってけど普通のイスカだと思う・・</div>
+        </div>
+    </div>
+
+    <!-- モーダルウィンドウ -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img id="modal-image" class="modal-content">
+    </div>
+
+    <script>
+    document.getElementById('modal').style.display = 'none';
+        function openModal(img) {
+            document.getElementById('modal-image').src = img.src;
+            document.getElementById('modal').style.display = 'flex';
+        }
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
